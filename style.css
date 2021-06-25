@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Blue: hsl(223, 87%, 63%);
+
+  /* ### Secondary */
+
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.header {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.header span {
+  color: var(--Blue);
+  margin-left: -6px;
+}
+
+.sub-header {
+  margin-bottom: 15px;
+  font-size: 36px;
+  letter-spacing: 1.5px;
+  color: var(--Gray);
+  font-weight: 300;
+}
+
+.sub-header span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+
+.text {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+}
+
+.btn-container input {
+  height: 45px;
+  border-radius: 30px;
+  width: 66%;
+  border: 1px solid var(--Gray);
+  opacity: 0.5;
+  padding-left: 20px;
+}
+
+.btn-container input::placeholder {
+  color: var(--Gray);
+}
+
+.btn-container button {
+  width: 32%;
+  height: 45px;
+  border-radius: 30px;
+  background-color: var(--Blue);
+  border: none;
+  color: white;
+}
+
+img {
+  width: 550px;
+  margin: 55px 0;
+}
+
+.social-icons {
+}
+
+.social-icons i {
+  margin: 0 15px;
+  color: var(--Blue);
+}
+
+.footer-text {
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 890px) {
+  .container {
+    padding: 40px 10px;
+  }
+
+  .sub-header {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    padding: 0 20px;
+  }
+
+  .btn-container input {
+    width: 100%;
+    height: 55px;
+  }
+
+  .btn-container button {
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  img {
+    width: 350px;
+  }
+}
